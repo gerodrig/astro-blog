@@ -1,0 +1,61 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '@layouts/MainLayout.astro';
+
+import post05img from '@images/post-05.png';
+---
+
+<MainLayout>
+  <h1 class="text-5xl text-white">Images</h1>
+
+  <img
+    id="image-01"
+    loading="eager"
+    src="/assets/images/post-05.png"
+    alt="Post 05"
+    class="w-1/2"
+  />
+  <!-- //show image size in kb in a paragraph -->
+  <p id="image01" class="text-white">Image size: KB</p>
+
+  <Image
+    class="mt-10 w-1/2"
+    id="image-02"
+    src={post05img}
+    alt="Post 05"
+    width={250}
+    height={250}
+  />
+  <p id="image02" class="text-white">Image size:</p>
+
+  <h1>Low Quality</h1>
+  <Image
+  quality="low"
+    class="w-1/2"
+    id="image-02"
+    src={post05img}
+    alt="Post 05"
+    width={250}
+    height={250}
+  />
+</MainLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const image01 = document.getElementById('image-01') as HTMLImageElement;
+    const image01Size = (image01?.src.length / 1024).toFixed(2);
+    document.querySelector('#image01')!.textContent =
+      `Image size: ${image01Size} KB`;
+
+    const image02 = document.getElementById('image-02') as HTMLImageElement;
+    const image02Size = (image02?.src.length / 1024).toFixed(2);
+    document.querySelector('#image02')!.textContent =
+      `Image size: ${image02Size} KB`;
+  });
+</script>
+
+<style>
+    h1 {
+        @apply mt-10 text-white;
+    }
+</style>
