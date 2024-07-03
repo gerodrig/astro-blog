@@ -2,7 +2,7 @@
 title: Getting Started with Flutter
 date: 2024-08-10
 description: Learn to develop mobile applications with Flutter and Dart.
-author: John Smith
+author: john-smith
 image: 'images/post-02.png'
 tags: [Flutter, Mobile Development, Dart]
 ---
@@ -68,7 +68,9 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePage
+
+State extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -105,3 +107,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+```

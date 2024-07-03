@@ -2,7 +2,7 @@
 title: CSS Grid Layout - A Complete Guide
 date: 2023-06-25
 description: Learn how to use CSS Grid Layout to create complex layouts easily.
-author: Emily Davis
+author: jane-doe
 image: 'images/post-05.png'
 tags: [CSS, Web Design, Frontend]
 ---

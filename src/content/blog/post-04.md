@@ -2,7 +2,7 @@
 title: Building a REST API with Node.js
 date: 2023-06-20
 description: In this tutorial, we will build a RESTful API using Node.js and Express.
-author: Bob Williams
+author: bob-williams
 image: 'images/post-04.png'
 tags: [Node.js, Express, API, Backend]
 ---
